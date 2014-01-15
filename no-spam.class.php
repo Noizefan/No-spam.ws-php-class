@@ -14,7 +14,7 @@ class emailService{
 	
 	public function newEmail($email = false){//just get new email and clear array with emails
 		if(!$email){
-			$email = rndName();
+			$email = $this->rndName();
 		}
 		//some work with global variables
 		$this->email = $email;
